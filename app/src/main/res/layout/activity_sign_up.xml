@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@color/colorBkgd"
+    tools:context=".SignUpActivity">
+
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="686dp"
+        android:background="@color/colorBkgd"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="SignUp"
+            android:textColor="@android:color/white"
+            android:textSize="35dp" />
+
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edt_bkgd"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edt_bkgd"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_bkgd"
+            android:text="signUp"
+            android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/buttonBackLog"
+            android:layout_width="111dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="130dp"
+            android:background="@color/colorBkgd"
+            android:scaleType="fitStart"
+            android:src="?attr/homeAsUpIndicator"
+            android:tint="#ffffff"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

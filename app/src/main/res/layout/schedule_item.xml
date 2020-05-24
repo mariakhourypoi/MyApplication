@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edt_bkgd"
+        android:paddingLeft="15dp"
+        >
+
+        <TextView
+            android:id="@+id/textViewDay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edt_bkgd"
+            android:paddingLeft="15dp"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/edt_bkgd"
+                android:ems="10"
+                android:paddingLeft="15dp"
+                android:text="start:"
+                android:textSize="19dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textViewTimeStart"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/edt_bkgd"
+                android:ems="10"
+                android:paddingLeft="15dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/edt_bkgd"
+                android:ems="10"
+                android:paddingLeft="15dp"
+                android:text="end:"
+                android:textSize="19dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewTimeEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/edt_bkgd"
+                android:ems="10"
+                android:paddingLeft="15dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

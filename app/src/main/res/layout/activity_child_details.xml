@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChildDetailsActivity"
+    android:background="@color/colorBkgd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            tools:context=".MainActivityForChild" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <Button
+                android:id="@+id/buttonChatHistory"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:text="Chat History"
+                android:textColor="@android:color/white"
+                android:background="@drawable/edt_bkgd"/>
+
+            <Button
+                android:id="@+id/buttonLocationHistory"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edt_bkgd"
+                android:text="Location History"
+                android:paddingLeft="15dp"
+                android:textColor="@android:color/white"
+                 />
+
+            <TextView
+                android:id="@+id/textViewEditSchedule"
+                android:layout_width="316dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/linearLayoutSA"
+                android:gravity="center"
+                android:text="edit schedule"
+                android:textColor="@color/colorReg"
+                android:textSize="19dp"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/buttonBackMain"
+            android:layout_width="111dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="130dp"
+            android:background="@color/colorBkgd"
+            android:scaleType="fitStart"
+            android:src="?attr/homeAsUpIndicator"
+            android:tint="#ffffff"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

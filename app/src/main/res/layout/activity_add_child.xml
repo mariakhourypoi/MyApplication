@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".AddChildActivity"
+    android:background="@color/colorBkgd">
+
+
+
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="706dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="Add A Child"
+            android:textColor="@android:color/white"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edt_bkgd"
+            android:hint="name"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/editTextBirthday"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edt_bkgd"
+            android:hint="Birthday"
+            android:inputType="date"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/editTextSchoolAdress"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edt_bkgd"
+            android:hint="School Adress"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"/>
+
+
+        <EditText
+            android:id="@+id/editTextHomeAdress"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edt_bkgd"
+            android:hint="Home Adress"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="183dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edt_bkgd"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray">
+
+            <TextView
+                android:id="@+id/childSchedule"
+                android:layout_width="79dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edt_bkgd"
+                android:paddingLeft="15dp"
+                android:text="School Schedule:"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonGoSched"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:background="@drawable/edt_bkgd"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:scaleType="fitEnd"
+                android:src="@drawable/calendarschedule"
+                android:tint="#FFFFFF"
+                android:visibility="visible"/>
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/addChildButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_bkgd"
+            android:text="Add Child"
+            android:textColor="@android:color/white" />
+
+
+        <ImageButton
+            android:id="@+id/cancelAddingButton"
+            android:layout_width="111dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="120dp"
+            android:background="@color/colorBkgd"
+            android:scaleType="fitStart"
+            android:src="?attr/homeAsUpIndicator"
+            android:tint="#ffffff"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>
+

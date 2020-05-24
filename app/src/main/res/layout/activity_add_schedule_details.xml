@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddScheduleDetailsActivity"
+    android:padding="25dp"
+    android:background="@color/colorBkgd"
+    >
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="706dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="Set Schedule"
+            android:textColor="@android:color/white"
+            android:textSize="35dp" />
+
+
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:backgroundTint="@color/colorEdt"
+            android:hint="Day"
+            android:paddingLeft="15dp"
+            android:spinnerMode="dropdown"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="165dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="172dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edt_bkgd"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray">
+
+                <TextView
+                    android:layout_width="79dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edt_bkgd"
+                    android:paddingLeft="15dp"
+                    android:text="Starting hour:"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18dp" />
+
+                <ImageButton
+                    android:id="@+id/buttonStarting"
+                    android:layout_width="58dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/edt_bkgd"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:scaleType="fitEnd"
+                    android:src="@android:drawable/ic_lock_idle_alarm"
+                    android:text="Button"
+                    android:tint="#FFFFFF"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="183dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edt_bkgd"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray">
+
+                <TextView
+                    android:id="@+id/childSchedule"
+                    android:layout_width="79dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edt_bkgd"
+                    android:paddingLeft="15dp"
+                    android:text="Ending hour:"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18dp" />
+
+                <ImageButton
+                    android:id="@+id/buttonEnding"
+                    android:layout_width="58dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/edt_bkgd"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:scaleType="fitEnd"
+                    android:src="@android:drawable/ic_lock_idle_alarm"
+                    android:text="Button"
+                    android:tint="#FFFFFF"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewStartSelect"
+                android:layout_width="172dp"
+                android:layout_height="20dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/textViewEndSelect"
+                android:layout_width="172dp"
+                android:layout_height="20dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/buttonSet"
+        android:text="Set Day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bkgd"
+
+        android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/imageButtonBack"
+            android:layout_width="111dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="130dp"
+            android:background="@color/colorBkgd"
+            android:scaleType="fitStart"
+            android:src="?attr/homeAsUpIndicator"
+            android:tint="#ffffff"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
